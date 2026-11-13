@@ -11,4 +11,22 @@ function registration(){
             alert("Student Registered");
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+function search(){
+    let r=document.getElementById("roll").value;
+    let found = false;
+
+    for(let s of students){
+        if(s.roll == r){
+            alert("Student found");
+            found = true;
+        }
+    }
+    if(!found){
+        alert("Student not found");
+    }
+>>>>>>> search
 }

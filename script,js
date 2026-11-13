@@ -1,0 +1,29 @@
+let students = [];
+function registration(){
+    let n=document.getElementById("name").value;
+    let r=document.getElementById("roll").value;
+
+    if(n == "" || r == ""){
+        alert("Enter all the Details");
+    }
+    else{
+        students.push(name:n,roll:r){
+            alert("Student Registered");
+        }
+    }
+}
+
+function search(){
+    let r=document.getElementById("roll").value;
+    let found = false;
+
+    for(let s of students){
+        if(s.roll == r){
+            alert("Student found");
+            found = true;
+        }
+    }
+    if(!found){
+        alert("Student not found");
+    }
+}
